@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مؤسسة شباب الريف</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+    }
+    header {
+      background-color: #2e7d32;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      padding: 20px;
+    }
+    .lands img {
+      width: 100%;
+      max-width: 400px;
+      margin: 10px 0;
+      border: 2px solid #ccc;
+    }
+    footer {
+      background-color: #eee;
+      padding: 20px;
+      text-align: center;
+    }
+    .whatsapp-btn {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>مؤسسة شباب الريف</h1>
+    <p>بيع الأراضي الزراعية في الجيزة والإسكندرية</p>
+  </header>
+
+  <section>
+    <h2>من نحن</h2>
+    <p>
+      نحن مؤسسة شباب الريف المتخصصة في بيع الأراضي الزراعية بأسعار مناسبة وفرص استثمارية مميزة في الجيزة (شارع شهاب - جامعة الدول) والإسكندرية (المندرة بجوار المسجد البحري).
+    </p>
+  </section>
+
+  <section class="lands">
+    <h2>أراضينا</h2>
+    <p>هنا يمكنك مشاهدة بعض أراضينا المتاحة:</p>
+    <img src="https://via.placeholder.com/400x250?text=أرض+1" alt="أرض 1" />
+    <img src="https://via.placeholder.com/400x250?text=أرض+2" alt="أرض 2" />
+  </section>
+
+  <section>
+    <h2>تواصل معنا</h2>
+    <p>📞 01061590811</p>
+    <p>📍 الجيزة – شارع شهاب / الإسكندرية – المندرة بجوار المسجد البحري</p>
+    <a class="whatsapp-btn" href="https://wa.me/201061590811" target="_blank">تواصل على واتساب</a>
+  </section>
+
+  <footer>
+    &copy; 2025 مؤسسة شباب الريف. جميع الحقوق محفوظة.
+  </footer>
+
+</body>
+</html>
