@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -89,4 +90,82 @@
       text-align: center;
       padding: 20px;
       background-color: #2e7d32;
-      color:
+      color: white;
+    }
+
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background-color: #25d366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>مؤسسة شباب الريف</h1>
+    <p>بيع أراضي زراعية في الجيزة والإسكندرية</p>
+  </header>
+
+  <nav>
+    <a href="#about">من نحن</a>
+    <a href="#gallery">صور من أراضينا</a>
+    <a href="#contact">تواصل معنا</a>
+  </nav>
+
+  <section id="about">
+    <h2 class="section-title">من نحن</h2>
+    <p>
+      مؤسسة شباب الريف تعمل على بيع الأراضي الزراعية بأسعار مناسبة وتسهيلات سداد ممتازة. نغطي مناطق الجيزة (جامعة الدول، شارع شهاب)
+      والإسكندرية (المندرة بجوار المسجد البحري). هدفنا تمكين الشباب من التملك الزراعي الآمن والمربح.
+    </p>
+  </section>
+
+  <section id="gallery">
+    <h2 class="section-title">صور من أراضينا</h2>
+    <div class="images">
+      <img src="https://via.placeholder.com/280x180?text=أرض+1" alt="أرض 1" />
+      <img src="https://via.placeholder.com/280x180?text=أرض+2" alt="أرض 2" />
+      <img src="https://via.placeholder.com/280x180?text=أرض+3" alt="أرض 3" />
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">تواصل معنا</h2>
+    <form onsubmit="sendWhatsAppMessage(); return false;">
+      <input type="text" id="name" placeholder="اسمك" required />
+      <input type="tel" id="phone" placeholder="رقم الموبايل" required />
+      <textarea id="message" rows="4" placeholder="رسالتك..." required></textarea>
+      <button type="submit">إرسال عبر واتساب</button>
+    </form>
+  </section>
+
+  <a class="whatsapp-btn" href="https://wa.me/201061590811" target="_blank">تواصل واتساب</a>
+
+  <footer>
+    <p>جميع الحقوق محفوظة © مؤسسة شباب الريف 2025</p>
+  </footer>
+
+  <script>
+    function sendWhatsAppMessage() {
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const message = document.getElementById('message').value;
+      const fullMessage = \`👤 الاسم: \${name}%0A📞 رقم الهاتف: \${phone}%0A📝 الرسالة: \${message}\`;
+      window.open('https://wa.me/201061590811?text=' + fullMessage, '_blank');
+    }
+  </script>
+</body>
+</html>
