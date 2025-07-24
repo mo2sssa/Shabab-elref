@@ -1,41 +1,92 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>مؤسسة شباب الريف</title>
   <style>
     body {
-      font-family: 'Tahoma', sans-serif;
-      background-color: #f0f8ff;
-      color: #333;
-      text-align: center;
-      padding: 40px;
-    }
-    h1 {
-      color: #006400;
-    }
-    ul {
-      list-style: none;
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
       padding: 0;
+      background-color: #f7f7f7;
+      color: #222;
     }
-    li {
-      margin: 10px 0;
+
+    header {
+      background-color: #2e7d32;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #4caf50;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
       font-weight: bold;
     }
-    p {
-      font-size: 18px;
+
+    section {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
     }
-  </style>
-</head>
-<body>
-  <h1>أهلاً بيكم في مؤسسة شباب الريف</h1>
-  <p>نحن نُقدم أفضل الأراضي الزراعية في الجيزة والإسكندرية.</p>
-  <h2>📍 مواقعنا:</h2>
-  <ul>
-    <li>الجيزة - شارع شهاب، جامعة الدول العربية</li>
-    <li>الإسكندرية - المندرة، بجوار المسجد البحري</li>
-  </ul>
-  <h2>📞 للتواصل:</h2>
-  <p>01061590811</p>
-</body>
-</html>
+
+    .section-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #2e7d32;
+    }
+
+    .images {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .images img {
+      width: 100%;
+      max-width: 280px;
+      border-radius: 8px;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: 'Cairo', sans-serif;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2e7d32;
+      color:
